@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Income to Assets - Transform Your Money Mindset & Build Real Wealth</title>
+    <meta name="description" content="Learn the simple principle that transformed a paycheck-to-paycheck lifestyle into $100K+ in liquid assets. Join our membership community and start your wealth-building journey today.">
+    <meta name="keywords" content="personal finance, wealth building, financial independence, money management, financial transformation">
+    <meta property="og:title" content="My Income to Assets - Transform Your Money Mindset">
+    <meta property="og:description" content="From paycheck-to-paycheck to $100K+ in liquid assets. Discover the one simple change that matters.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://myincometoassets.com">
+    <meta name="theme-color" content="#1a472a">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a472a;
+            --accent: #d4af37;
+            --accent-dark: #b8941e;
+            --light: #f8f8f8;
+            --dark: #1a1a1a;
+            --success: #10b981;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --light: #1a1a1a;
+                --dark: #f8f8f8;
+                --text-primary: #f3f4f6;
+                --text-secondary: #d1d5db;
+                --border: #374151;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--light);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-dark);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #2d5a3d 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-subheader {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 1rem 3rem;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--accent);
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--accent);
+        }
+
+        .cta-secondary {
+            background-color: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            margin-left: 1rem;
+        }
+
+        .cta-secondary:hover {
+            background-color: var(--accent);
+            color: var(--primary);
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 6rem 2rem;
+            background-color: var(--light);
+        }
+
+        .story-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary);
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .story-text h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .story-text p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        /* The Principle Section */
+        .principle-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, #2d5a3d 100%);
+            color: white;
+        }
+
+        .principle-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .principle-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--accent);
+        }
+
+        .principle-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 8px;
+            border: 2px solid var(--accent);
+            margin-bottom: 2rem;
+        }
+
+        .principle-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .principle-box p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 6rem 2rem;
+            background-color: var(--light);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .benefit-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Membership CTA Section */
+        .membership-cta {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, #2d5a3d 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .membership-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .membership-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .membership-cta p {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 6rem 2rem;
+            background-color: var(--light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subheader {
+                font-size: 1.2rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .cta-secondary {
+                margin-left: 0;
+                margin-top: 1rem;
+                display: block;
+            }
+
+            .cta-button, .cta-secondary {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">MITA</div>
+                <nav>
+                    <a href="#story">The Story</a>
+                    <a href="#principle">The Principle</a>
+                    <a href="#benefits">Why Join</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-subheader">Transform Your Financial Life</div>
+            <h1>From Paycheck-to-Paycheck to $100K+ in Liquid Assets</h1>
+            <p>Discover the one simple principle that changed everything. Learn where your money goes FIRST after you get paid — and watch your wealth grow.</p>
+            <button class="cta-button" onclick="scrollToMembership()">Join the Membership</button>
+            <button class="cta-secondary" onclick="scrollToStory()">Learn My Story</button>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section" id="story">
+        <div class="story-content">
+            <h2 class="section-title">My Journey to Financial Freedom</h2>
+
+            <div class="story-grid">
+                <div class="story-text">
+                    <h3>The Problem</h3>
+                    <p>I was stuck in the paycheck-to-paycheck cycle. Every month, money came in and seemed to disappear just as fast. I worked hard, earned decent money, but had nothing to show for it.</p>
+                    <p>Sound familiar? You're not alone. Millions of people face this exact struggle—working their entire lives without building real wealth.</p>
+                </div>
+                <div class="story-text">
+                    <h3>The Breakthrough</h3>
+                    <p>Everything changed when I discovered one simple principle: <strong>WHERE YOUR MONEY GOES FIRST matters more than how much you make.</strong></p>
+                    <p>This wasn't about budgeting, cutting expenses, or following complicated financial rules. It was about changing one fundamental behavior with my income.</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">$100K+</div>
+                    <div class="stat-label">In Liquid Assets</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Paycheck-to-Millionaire Track</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Simple Change</div>
+                </div>
+            </div>
+
+            <div class="story-grid">
+                <div class="story-text">
+                    <h3>The Results</h3>
+                    <p>By simply changing where my money goes FIRST, I went from living paycheck-to-paycheck to building $100K+ in liquid assets. Now I'm well on my way to becoming a millionaire.</p>
+                    <p>The best part? This principle works for anyone, regardless of income level. It's not about earning more—it's about directing your income strategically.</p>
+                </div>
+                <div class="story-text">
+                    <h3>Your Turn</h3>
+                    <p>I created this membership community to share this principle with people ready to transform their financial lives. This is more than just financial advice—it's a lifestyle change.</p>
+                    <p>If you're serious about building wealth and creating financial freedom, you're in the right place. Let's do this together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Principle Section -->
+    <section class="principle-section" id="principle">
+        <div class="principle-content">
+            <h2>The Core Principle</h2>
+            <div class="principle-box">
+                <h3>Where Your Money Goes FIRST After You Get Paid</h3>
+                <p>Most people let their income get spent on whatever comes up. This backwards approach keeps you broke.</p>
+                <p style="font-size: 1.3rem; color: var(--accent); margin: 1.5rem 0; font-weight: 600;">
+                    Instead, decide BEFORE the money arrives where it goes first. Build wealth intentionally, not by accident.
+                </p>
+                <p>When you master this one principle, everything changes. Your relationship with money transforms. Your wealth grows. Your financial stress decreases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="benefits">
+        <div class="container">
+            <h2 class="section-title">What You'll Get in the Membership</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Core Training</h3>
+                    <p>Learn the exact principle and framework that transformed my financial life, step-by-step.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Community Support</h3>
+                    <p>Connect with others on the same journey. Share wins, ask questions, and grow together.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Action Plans</h3>
+                    <p>Get practical, implementation-ready guides to start building wealth immediately.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💬</div>
+                    <h3>Direct Access</h3>
+                    <p>Get answers to your specific situation. I'm here to help you succeed.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <h3>Ongoing Updates</h3>
+                    <p>Continuous training, new content, and strategies as your journey evolves.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Accountability</h3>
+                    <p>Join a community of people committed to changing their financial trajectory.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Is this a get-rich-quick scheme?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No. This is about building sustainable, long-term wealth through changing your financial behaviors. It takes time and commitment, but the results are real and lasting.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What if I have a low income?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>This principle works at any income level. It's not about how much you make—it's about where your money goes first. Start where you are, and build from there.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How long before I see results?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You'll notice changes in your mindset and money habits immediately. Real wealth building takes consistent effort over time. Most members see significant progress within 6-12 months.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Is there a money-back guarantee?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. If the membership isn't right for you, we offer a 30-day money-back guarantee. Your success is what matters to us.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How much does the membership cost?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Pricing details are available on our membership page. We offer flexible payment options to make it accessible for everyone serious about transforming their finances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership CTA Section -->
+    <section class="membership-cta" id="membership">
+        <div class="membership-content">
+            <h2>Ready to Transform Your Financial Life?</h2>
+            <p>Join hundreds of members who are building real wealth and achieving financial freedom.</p>
+            <button class="cta-button" style="color: var(--primary);" onclick="joinMembership()">Join the Membership Now</button>
+            <p style="margin-top: 2rem; font-size: 0.95rem; opacity: 0.8;">30-day money-back guarantee. No questions asked.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Income to Assets. All rights reserved.</p>
+            <p>Transform your relationship with money. Build lasting wealth.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToStory() {
+            document.getElementById('story').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToMembership() {
+            document.getElementById('membership').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function joinMembership() {
+            // Placeholder for membership signup flow
+            alert('Membership signup coming soon! Check back for launch details.');
+        }
+
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
