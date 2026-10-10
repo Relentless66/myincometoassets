@@ -3,648 +3,925 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Income to Assets - Transform Your Money Mindset & Build Real Wealth</title>
-    <meta name="description" content="Learn the simple principle that transformed a paycheck-to-paycheck lifestyle into $100K+ in liquid assets. Join the membership and start building wealth today.">
-    <meta name="keywords" content="personal finance, wealth building, financial independence, money management, financial transformation">
-    <meta property="og:title" content="My Income to Assets - Transform Your Money Mindset">
-    <meta property="og:description" content="From paycheck-to-paycheck to $100K+ in liquid assets. Discover the one simple change that matters.">
+    <title>Income to Assets (I2A) | Turn Every Paycheck Into Perpetual Cash Flow</title>
+    <meta name="description" content="From paycheck-to-paycheck to over $100K in liquid assets by changing one thing: where my money goes first. Join the Income to Assets community on Skool.">
+    <meta property="og:title" content="Income to Assets | Turn Every Paycheck Into Perpetual Cash Flow">
+    <meta property="og:description" content="From paycheck-to-paycheck to $100K+ in liquid assets by changing where my money goes first. Educate. Implement. Build Freedom.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://myincometoassets.com">
-    <meta name="theme-color" content="#1a472a">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://myincometoassets.com/">
+    <meta property="og:image" content="https://myincometoassets.com/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#030604">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@500;600;700&family=Kaushan+Script&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1a472a;
-            --accent: #d4af37;
-            --accent-dark: #b8941e;
-            --light: #f8f8f8;
-            --dark: #1a1a1a;
-            --success: #10b981;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-            --border: #e5e7eb;
+            --bg: #030604;
+            --bg-2: #07110a;
+            --panel: #0a170e;
+            --line: rgba(212, 175, 55, 0.28);
+            --gold: #e2bc4a;
+            --gold-soft: #f6dd8a;
+            --gold-metal: linear-gradient(180deg, #fff4bf 0%, #f4d36b 24%, #c48f25 52%, #f1cf63 74%, #a5761c 100%);
+            --gold-flat: linear-gradient(135deg, #f8e08e 0%, #d9a93a 45%, #f3d272 70%, #b5841f 100%);
+            --green: #3ee03a;
+            --green-glow: rgba(62, 224, 58, 0.45);
+            --green-deep: #0c3a15;
+            --text: #eef1ea;
+            --muted: #a9b5a6;
+            --radius: 14px;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background-color: var(--light);
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            overflow-x: hidden;
         }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; text-decoration: none; }
 
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.3s ease;
+        .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+        .gold-text {
+            background: var(--gold-metal);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
+        .green-text { color: var(--green); text-shadow: 0 0 22px var(--green-glow); }
 
-        a:hover {
-            color: var(--accent-dark);
-        }
-
-        /* Header & Navigation */
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: var(--accent);
-        }
-
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        nav a {
-            color: white;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--accent);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, #2d5a3d 100%);
-            color: white;
-            padding: 6rem 2rem;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-
-        .hero-subheader {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--accent);
+        .eyebrow {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: var(--gold-soft);
+        }
+        .script {
+            font-family: 'Kaushan Script', cursive;
+            font-weight: 400;
+        }
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            line-height: 1.08;
+            letter-spacing: 0.01em;
         }
 
-        .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent);
-            color: var(--primary);
-            padding: 1rem 3rem;
-            border-radius: 5px;
+        /* Buttons */
+        .btn {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            border: 2px solid var(--accent);
-            cursor: pointer;
+            font-size: 0.95rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 17px 28px;
+            border-radius: 999px;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .btn-gold {
+            background: var(--gold-flat);
+            color: #1a1203;
+            box-shadow: 0 0 0 1px rgba(255, 236, 160, 0.6) inset, 0 10px 34px rgba(212, 160, 40, 0.35);
+        }
+        .btn-gold::after {
+            content: "";
+            position: absolute;
+            top: 0; left: -60%;
+            width: 40%; height: 100%;
+            background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+            transform: skewX(-20deg);
+            animation: shine 4.5s ease-in-out infinite;
+        }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px rgba(255, 236, 160, 0.8) inset, 0 16px 44px rgba(212, 160, 40, 0.5); }
+        .btn-ghost {
+            color: var(--gold-soft);
+            border: 1px solid var(--line);
+            background: rgba(212, 175, 55, 0.05);
+        }
+        .btn-ghost:hover { border-color: var(--gold); transform: translateY(-2px); }
+        .btn svg { width: 18px; height: 18px; }
+        @keyframes shine { 0%, 60% { left: -60%; } 100% { left: 130%; } }
+
+        /* Header */
+        header {
+            position: fixed;
+            inset: 0 0 auto 0;
+            z-index: 50;
+            transition: background 0.3s ease, border-color 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+        header.scrolled {
+            background: rgba(3, 6, 4, 0.82);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom-color: var(--line);
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 76px;
+        }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .brand img { width: 46px; height: 46px; }
+        .brand span {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 1.15rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .nav-links { display: flex; align-items: center; gap: 30px; }
+        .nav-links a:not(.btn) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            transition: color 0.2s ease;
+        }
+        .nav-links a:not(.btn):hover { color: var(--gold-soft); }
+        .nav-links .btn { padding: 11px 22px; font-size: 0.78rem; }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 80px;
+            background:
+                radial-gradient(ellipse 60% 55% at 72% 45%, rgba(46, 160, 40, 0.22), transparent 70%),
+                radial-gradient(ellipse 50% 60% at 15% 90%, rgba(212, 160, 40, 0.12), transparent 70%),
+                linear-gradient(180deg, #020403 0%, var(--bg-2) 100%);
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(62, 224, 58, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(62, 224, 58, 0.05) 1px, transparent 1px);
+            background-size: 64px 64px;
+            mask-image: radial-gradient(ellipse 70% 60% at 60% 45%, #000 20%, transparent 75%);
+            -webkit-mask-image: radial-gradient(ellipse 70% 60% at 60% 45%, #000 20%, transparent 75%);
+        }
+        .hero-grid {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1.12fr 0.88fr;
+            align-items: center;
+            gap: 48px;
+        }
+        .hero h1 {
+            font-size: clamp(2.6rem, 6vw, 4.9rem);
+            margin: 18px 0 22px;
+        }
+        .hero h1 .line { display: block; }
+        .shimmer {
+            background: linear-gradient(100deg, #b5841f 0%, #f6dd8a 20%, #fff7d1 30%, #e2bc4a 42%, #a5761c 60%, #f1cf63 80%, #b5841f 100%);
+            background-size: 220% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shimmer 7s linear infinite;
+        }
+        @keyframes shimmer { to { background-position: -220% 0; } }
+        .hero-lead {
+            font-size: 1.15rem;
+            color: var(--muted);
+            max-width: 560px;
+            margin-bottom: 34px;
+        }
+        .hero-lead strong { color: var(--text); font-weight: 600; }
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+        .pillars-mini {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 22px;
+            margin-top: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .pillars-mini span + span::before {
+            content: "";
+            display: inline-block;
+            width: 1px; height: 12px;
+            background: var(--gold);
+            margin-right: 22px;
+            vertical-align: -1px;
         }
 
-        .cta-button:hover {
-            background-color: transparent;
-            color: var(--accent);
+        .logo-stage {
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+        .logo-stage::before {
+            content: "";
+            position: absolute;
+            width: 78%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(62, 224, 58, 0.35), rgba(212, 175, 55, 0.12) 45%, transparent 70%);
+            filter: blur(30px);
+            animation: pulse 5s ease-in-out infinite;
+        }
+        .logo-stage img {
+            position: relative;
+            width: min(100%, 520px);
+            filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.7));
+            animation: float 7s ease-in-out infinite;
+        }
+        .spark {
+            position: absolute;
+            width: 4px; height: 4px;
+            border-radius: 50%;
+            background: var(--gold-soft);
+            box-shadow: 0 0 10px 2px rgba(246, 221, 138, 0.8);
+            opacity: 0;
+            animation: rise 6s linear infinite;
+        }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+        @keyframes pulse { 0%, 100% { opacity: 0.75; transform: scale(1); } 50% { opacity: 1; transform: scale(1.06); } }
+        @keyframes rise {
+            0% { transform: translateY(40px); opacity: 0; }
+            15% { opacity: 1; }
+            100% { transform: translateY(-260px); opacity: 0; }
         }
 
-        .cta-secondary {
-            background-color: transparent;
-            color: var(--accent);
-            border: 2px solid var(--accent);
-            margin-left: 1rem;
+        /* Proof strip */
+        .strip {
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.07), transparent);
+            padding: 22px 0;
         }
-
-        .cta-secondary:hover {
-            background-color: var(--accent);
-            color: var(--primary);
+        .strip-inner {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 46px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
         }
+        .strip-inner b { color: var(--gold); font-weight: 700; }
 
-        /* Story Section */
-        .story-section {
-            padding: 6rem 2rem;
-            background-color: var(--light);
+        /* Sections */
+        section.block { padding: 120px 0; position: relative; }
+        .section-head { text-align: center; max-width: 760px; margin: 0 auto 64px; }
+        .section-head h2 { font-size: clamp(2.1rem, 4.4vw, 3.3rem); margin: 14px 0 18px; }
+        .section-head p { color: var(--muted); font-size: 1.08rem; }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            color: var(--gold);
+            font-size: 0.8rem;
         }
-
-        .story-content {
-            max-width: 900px;
-            margin: 0 auto;
+        .divider::before, .divider::after {
+            content: "";
+            height: 1px;
+            width: min(160px, 22vw);
+            background: linear-gradient(90deg, transparent, var(--gold));
         }
+        .divider::after { transform: scaleX(-1); }
 
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            color: var(--primary);
-        }
-
+        /* Story */
+        .story { background: linear-gradient(180deg, var(--bg-2), var(--bg)); }
         .story-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            grid-template-columns: 0.95fr 1.05fr;
+            gap: 64px;
             align-items: center;
-            margin-bottom: 3rem;
         }
-
-        .story-text h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+        .framed {
+            position: relative;
+            border-radius: var(--radius);
+            padding: 6px;
+            background: var(--gold-flat);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(212, 175, 55, 0.12);
         }
-
-        .story-text p {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
-
-        .stat {
-            padding: 2rem;
-            background-color: white;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-        }
-
-        .stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--accent);
+        .framed img { border-radius: calc(var(--radius) - 5px); width: 100%; }
+        .framed .tag {
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            background: #050a06;
+            border: 1px solid var(--gold);
+            border-radius: 999px;
+            padding: 8px 20px;
+            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
+            font-size: 0.72rem;
+            letter-spacing: 0.26em;
+            text-transform: uppercase;
+            color: var(--gold-soft);
+        }
+        .story-copy h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 14px 0 24px; }
+        .story-copy p { color: var(--muted); font-size: 1.07rem; margin-bottom: 18px; }
+        .story-copy p strong { color: var(--text); }
+        .story-copy .callout {
+            margin-top: 28px;
+            padding: 20px 24px;
+            border-left: 3px solid var(--green);
+            background: linear-gradient(90deg, rgba(62, 224, 58, 0.09), transparent);
+            border-radius: 0 10px 10px 0;
+            color: var(--text);
+            font-size: 1.12rem;
         }
 
-        .stat-label {
-            color: var(--text-secondary);
-            font-weight: 500;
-            margin-top: 0.5rem;
-        }
-
-        /* The Principle Section */
-        .principle-section {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--primary) 0%, #2d5a3d 100%);
-            color: white;
-        }
-
-        .principle-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .principle-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: var(--accent);
-        }
-
-        .principle-box {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 3rem;
-            border-radius: 8px;
-            border: 2px solid var(--accent);
-            margin-bottom: 2rem;
-        }
-
-        .principle-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .principle-box p {
-            font-size: 1.1rem;
-            opacity: 0.95;
-            margin-bottom: 1rem;
-        }
-
-        /* Benefits Section */
-        .benefits-section {
-            padding: 6rem 2rem;
-            background-color: var(--light);
-        }
-
-        .benefits-grid {
+        /* Journey */
+        .journey {
+            margin-top: 110px;
+            position: relative;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 24px;
         }
-
-        .benefit-card {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .journey-track {
+            position: absolute;
+            top: 38px;
+            left: 16.66%;
+            right: 16.66%;
+            height: 2px;
+            background: rgba(212, 175, 55, 0.25);
         }
-
-        .benefit-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        .journey-track span {
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 0;
+            background: linear-gradient(90deg, var(--gold), var(--green));
+            box-shadow: 0 0 14px var(--green-glow);
+            transition: width 2.2s cubic-bezier(.2, .7, .2, 1);
         }
-
-        .benefit-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+        .journey.in .journey-track span { width: 72%; }
+        .stop { position: relative; text-align: center; }
+        .stop-dot {
+            width: 78px; height: 78px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(circle at 50% 35%, #12301a, #050a06 70%);
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.08), 0 0 30px rgba(212, 175, 55, 0.25);
         }
-
-        .benefit-card h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
+        .stop-dot svg { width: 32px; height: 32px; color: var(--green); }
+        .stop.goal .stop-dot { border-style: dashed; box-shadow: 0 0 0 6px rgba(62, 224, 58, 0.07); }
+        .stop-value {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: clamp(2rem, 4vw, 2.9rem);
+            line-height: 1;
+            margin-bottom: 8px;
         }
-
-        .benefit-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        /* Membership CTA Section */
-        .membership-cta {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--primary) 0%, #2d5a3d 100%);
-            color: white;
-            text-align: center;
-        }
-
-        .membership-content {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .membership-cta h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent);
-        }
-
-        .membership-cta p {
-            font-size: 1.15rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            padding: 6rem 2rem;
-            background-color: var(--light);
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background-color: white;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-        }
-
-        .faq-question {
+        .stop-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.76rem;
             font-weight: 600;
-            color: var(--primary);
-            font-size: 1.1rem;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        /* Principle */
+        .principle {
+            background:
+                radial-gradient(ellipse 55% 70% at 50% 50%, rgba(46, 160, 40, 0.18), transparent 70%),
+                var(--bg);
+            text-align: center;
+            overflow: hidden;
+        }
+        .principle-card {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 72px 56px;
+            border-radius: 24px;
+            background: linear-gradient(180deg, rgba(10, 23, 14, 0.9), rgba(4, 9, 5, 0.95));
+            border: 1px solid var(--line);
+            box-shadow: 0 0 0 1px rgba(255, 236, 160, 0.05) inset, 0 40px 100px rgba(0, 0, 0, 0.5);
+        }
+        .principle-card::before, .principle-card::after {
+            content: "";
+            position: absolute;
+            width: 90px; height: 90px;
+            border: 2px solid var(--gold);
+        }
+        .principle-card::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; border-top-left-radius: 24px; }
+        .principle-card::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; border-bottom-right-radius: 24px; }
+        .principle-card h2 { font-size: clamp(2.2rem, 5.6vw, 4.2rem); margin: 18px 0 26px; }
+        .principle-card p { color: var(--muted); font-size: 1.12rem; max-width: 640px; margin: 0 auto 16px; }
+        .principle-card .script {
+            display: block;
+            font-size: clamp(1.9rem, 4.4vw, 2.9rem);
+            margin-top: 34px;
+            transform: rotate(-3deg);
+        }
+
+        /* Pillars */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .pillar {
+            position: relative;
+            padding: 38px 30px 34px;
+            border-radius: var(--radius);
+            background: linear-gradient(180deg, var(--panel), #050a06);
+            border: 1px solid rgba(212, 175, 55, 0.18);
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+        }
+        .pillar:hover {
+            transform: translateY(-6px);
+            border-color: rgba(212, 175, 55, 0.55);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 40px rgba(62, 224, 58, 0.08);
+        }
+        .pillar-num {
+            position: absolute;
+            top: 22px; right: 26px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            color: rgba(212, 175, 55, 0.45);
+        }
+        .ring {
+            width: 74px; height: 74px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            margin-bottom: 24px;
+            background: radial-gradient(circle at 50% 35%, #123a1a, #040805 72%);
+            box-shadow: 0 0 0 3px #d9a93a, 0 0 0 5px rgba(255, 236, 160, 0.25), 0 0 26px rgba(212, 175, 55, 0.25);
+        }
+        .ring svg { width: 34px; height: 34px; color: var(--green); filter: drop-shadow(0 0 6px var(--green-glow)); }
+        .pillar h3 { font-size: 1.4rem; margin-bottom: 10px; letter-spacing: 0.03em; }
+        .pillar p { color: var(--muted); font-size: 0.98rem; }
+
+        /* Freedom band */
+        .freedom {
+            background: linear-gradient(180deg, var(--bg), var(--bg-2));
+        }
+        .freedom-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 64px;
+            align-items: center;
+        }
+        .freedom h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 14px 0 22px; }
+        .freedom p { color: var(--muted); font-size: 1.07rem; margin-bottom: 16px; }
+        .steps { list-style: none; margin: 28px 0 0; display: grid; gap: 16px; }
+        .steps li {
+            display: grid;
+            grid-template-columns: 46px 1fr;
+            gap: 16px;
+            align-items: start;
+        }
+        .steps .n {
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            color: #1a1203;
+            background: var(--gold-flat);
+        }
+        .steps b {
+            display: block;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-size: 1.15rem;
+            color: var(--text);
+        }
+        .steps span { color: var(--muted); font-size: 0.98rem; }
+
+        /* Join */
+        .join {
+            text-align: center;
+            background:
+                radial-gradient(ellipse 60% 80% at 50% 100%, rgba(46, 160, 40, 0.25), transparent 70%),
+                var(--bg-2);
+            overflow: hidden;
+        }
+        .join img.join-logo {
+            width: 170px;
+            margin: 0 auto 28px;
+            filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.35));
+        }
+        .join h2 { font-size: clamp(2.3rem, 5.4vw, 4rem); margin-bottom: 18px; }
+        .join p { color: var(--muted); font-size: 1.12rem; max-width: 620px; margin: 0 auto 36px; }
+        .join .btn { font-size: 1.02rem; padding: 20px 44px; }
+        .join .fine {
+            margin-top: 22px;
+            font-size: 0.85rem;
+            color: var(--muted);
+            opacity: 0.8;
+        }
+
+        /* FAQ */
+        .faq { background: var(--bg); }
+        .faq-list { max-width: 820px; margin: 0 auto; display: grid; gap: 14px; }
+        details {
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            background: linear-gradient(180deg, var(--panel), #050a06);
+            transition: border-color 0.25s ease;
+        }
+        details[open] { border-color: rgba(212, 175, 55, 0.5); }
+        summary {
+            list-style: none;
             cursor: pointer;
+            padding: 22px 26px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 16px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            font-size: 1.15rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
-
-        .faq-answer {
-            color: var(--text-secondary);
-            margin-top: 1rem;
-            display: none;
+        summary::-webkit-details-marker { display: none; }
+        summary::after {
+            content: "+";
+            flex: none;
+            width: 30px; height: 30px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            font-family: 'Inter', sans-serif;
+            transition: transform 0.25s ease;
         }
-
-        .faq-item.active .faq-answer {
-            display: block;
-        }
+        details[open] summary::after { transform: rotate(45deg); }
+        details p { padding: 0 26px 24px; color: var(--muted); }
 
         /* Footer */
         footer {
-            background-color: var(--primary);
-            color: white;
-            padding: 3rem 2rem;
+            border-top: 1px solid var(--line);
+            padding: 56px 0 40px;
+            background: #020403;
             text-align: center;
         }
+        .footer-tag {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 26px;
+            margin-bottom: 28px;
+        }
+        .footer-tag i { color: var(--gold); font-style: normal; }
+        .disclaimer {
+            max-width: 760px;
+            margin: 0 auto 22px;
+            font-size: 0.8rem;
+            color: #7d8a7a;
+        }
+        .copy { font-size: 0.82rem; color: var(--muted); }
 
-        footer p {
-            margin-bottom: 1rem;
-            opacity: 0.9;
+        /* Reveal */
+        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s ease, transform 0.9s ease; }
+        .reveal.in { opacity: 1; transform: none; }
+        .reveal.d1 { transition-delay: 0.1s; }
+        .reveal.d2 { transition-delay: 0.2s; }
+        .reveal.d3 { transition-delay: 0.3s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation: none !important; transition: none !important; }
+            .reveal { opacity: 1; transform: none; }
+            .journey-track span { width: 72%; }
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-subheader {
-                font-size: 1.2rem;
-            }
-
-            nav {
-                display: none;
-            }
-
-            .story-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .cta-secondary {
-                margin-left: 0;
-                margin-top: 1rem;
-                display: block;
-            }
-
-            .cta-button, .cta-secondary {
-                width: 100%;
-                text-align: center;
-            }
+        @media (max-width: 960px) {
+            .hero-grid, .story-grid, .freedom-grid { grid-template-columns: 1fr; }
+            .hero { text-align: center; padding-top: 110px; }
+            .hero-lead { margin-left: auto; margin-right: auto; }
+            .hero-actions, .pillars-mini { justify-content: center; }
+            .logo-stage { order: -1; }
+            .logo-stage img { width: min(78vw, 400px); }
+            .pillars-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links a:not(.btn) { display: none; }
+            .freedom-grid .framed { order: -1; }
+        }
+        @media (max-width: 620px) {
+            section.block { padding: 84px 0; }
+            .container { padding: 0 16px; }
+            .pillars-grid { grid-template-columns: 1fr; }
+            .journey { grid-template-columns: 1fr; gap: 40px; }
+            .journey-track { display: none; }
+            .principle-card { padding: 54px 24px; }
+            .brand span { display: none; }
+            .btn { padding: 15px 26px; }
+            .hero-actions .btn { width: 100%; justify-content: center; }
+            .strip-inner { font-size: 0.78rem; letter-spacing: 0.22em; }
+            .hero-eyebrow { display: none; }
+            .framed .tag { font-size: 0.62rem; letter-spacing: 0.18em; padding: 7px 14px; }
+            .pillars-mini { font-size: 0.68rem; letter-spacing: 0.2em; }
+            .pillars-mini span + span::before { margin-right: 14px; }
+            .pillars-mini { gap: 10px 14px; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">MITA</div>
-                <nav>
-                    <a href="#story">The Story</a>
-                    <a href="#principle">The Principle</a>
-                    <a href="#benefits">Why Join</a>
-                    <a href="#faq">FAQ</a>
-                </nav>
-            </div>
+    <header id="top">
+        <div class="container nav">
+            <a href="#" class="brand" aria-label="Income to Assets home">
+                <img src="assets/i2a-logo-sm.webp" alt="" width="46" height="46" style="object-fit: contain">
+                <span class="gold-text">Income to Assets</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#story">My Story</a>
+                <a href="#principle">The Principle</a>
+                <a href="#pillars">The Method</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://www.skool.com/incometoassets" target="_blank" rel="noopener" class="btn btn-gold">Join on Skool</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-subheader">Transform Your Financial Life</div>
-            <h1>From Paycheck-to-Paycheck to $100K+ in Liquid Assets</h1>
-            <p>Discover the one simple principle that changed everything. Learn where your money goes FIRST after you get paid — and watch your wealth grow.</p>
-            <button class="cta-button" onclick="scrollToMembership()">Join the Membership</button>
-            <button class="cta-secondary" onclick="scrollToStory()">Learn My Story</button>
-        </div>
-    </section>
-
-    <!-- Story Section -->
-    <section class="story-section" id="story">
-        <div class="story-content">
-            <h2 class="section-title">My Journey to Financial Freedom</h2>
-
-            <div class="story-grid">
-                <div class="story-text">
-                    <h3>The Problem</h3>
-                    <p>I was stuck in the paycheck-to-paycheck cycle. Every month, money came in and seemed to disappear just as fast. I worked hard, earned decent money, but had nothing to show for it.</p>
-                    <p>Sound familiar? You're not alone. Millions of people face this exact struggle—working their entire lives without building real wealth.</p>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow hero-eyebrow reveal">Real Strategies &middot; Real People &middot; Real Results</div>
+                    <h1 class="reveal d1">
+                        <span class="line">Turn Every</span>
+                        <span class="line shimmer">Paycheck</span>
+                        <span class="line">Into <span class="green-text">Perpetual</span></span>
+                        <span class="line shimmer">Cash Flow</span>
+                    </h1>
+                    <p class="hero-lead reveal d2">I went from just over broke, living paycheck to paycheck, to <strong>over $100,000 in liquid assets</strong>, and I'm well on my way to a million. I didn't do it by earning more. I did it by changing <strong>where my money went first</strong>.</p>
+                    <div class="hero-actions reveal d3">
+                        <a href="https://www.skool.com/incometoassets" target="_blank" rel="noopener" class="btn btn-gold">
+                            Join the I2A Community
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                        <a href="#story" class="btn btn-ghost">Read My Story</a>
+                    </div>
+                    <div class="pillars-mini reveal d3">
+                        <span>Educate</span><span>Implement</span><span>Build Freedom</span>
+                    </div>
                 </div>
-                <div class="story-text">
-                    <h3>The Breakthrough</h3>
-                    <p>Everything changed when I discovered one simple principle: <strong>WHERE YOUR MONEY GOES FIRST matters more than how much you make.</strong></p>
-                    <p>This wasn't about budgeting, cutting expenses, or following complicated financial rules. It was about changing one fundamental behavior with my income.</p>
-                </div>
-            </div>
-
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-number">$100K+</div>
-                    <div class="stat-label">In Liquid Assets</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">$1M</div>
-                    <div class="stat-label">The Next Goal</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">1</div>
-                    <div class="stat-label">Simple Change</div>
+                <div class="logo-stage">
+                    <img src="assets/i2a-logo.webp" alt="I2A Income to Assets logo: Turn every paycheck into perpetual cash flow" width="900" height="895">
+                    <i class="spark" style="left:18%; top:70%; animation-delay:0s"></i>
+                    <i class="spark" style="left:82%; top:62%; animation-delay:1.4s"></i>
+                    <i class="spark" style="left:30%; top:88%; animation-delay:2.6s"></i>
+                    <i class="spark" style="left:70%; top:84%; animation-delay:3.7s"></i>
+                    <i class="spark" style="left:50%; top:92%; animation-delay:4.8s"></i>
                 </div>
             </div>
+        </section>
 
-            <div class="story-grid">
-                <div class="story-text">
-                    <h3>The Results</h3>
-                    <p>By simply changing where my money goes FIRST, I went from living paycheck-to-paycheck to building $100K+ in liquid assets. Now I'm well on my way to becoming a millionaire.</p>
-                    <p>The best part? This principle works for anyone, regardless of income level. It's not about earning more—it's about directing your income strategically.</p>
-                </div>
-                <div class="story-text">
-                    <h3>Your Turn</h3>
-                    <p>I created this membership community to share this principle with people ready to transform their financial lives. This is more than just financial advice—it's a lifestyle change.</p>
-                    <p>If you're serious about building wealth and creating financial freedom, you're in the right place. Let's do this together.</p>
-                </div>
+        <div class="strip">
+            <div class="container strip-inner">
+                <span><b>Real</b> Strategies</span>
+                <span><b>Real</b> People</span>
+                <span><b>Real</b> Results</span>
             </div>
         </div>
-    </section>
 
-    <!-- The Principle Section -->
-    <section class="principle-section" id="principle">
-        <div class="principle-content">
-            <h2>The Core Principle</h2>
-            <div class="principle-box">
-                <h3>Where Your Money Goes FIRST After You Get Paid</h3>
-                <p>Most people let their income get spent on whatever comes up. This backwards approach keeps you broke.</p>
-                <p style="font-size: 1.3rem; color: var(--accent); margin: 1.5rem 0; font-weight: 600;">
-                    Instead, decide BEFORE the money arrives where it goes first. Build wealth intentionally, not by accident.
-                </p>
-                <p>When you master this one principle, everything changes. Your relationship with money transforms. Your wealth grows. Your financial stress decreases.</p>
-            </div>
-        </div>
-    </section>
+        <section class="block story" id="story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="framed reveal">
+                        <img src="assets/discipline.webp" alt="A green semi truck on the highway at sunrise with 'Discipline Creates Freedom' on the trailer" width="540" height="305" loading="lazy">
+                        <div class="tag">Discipline Creates Freedom</div>
+                    </div>
+                    <div class="story-copy">
+                        <div class="eyebrow reveal">My Story</div>
+                        <h2 class="reveal d1">From <span class="green-text">Paycheck to Paycheck</span> to <span class="gold-text">Building Assets</span></h2>
+                        <p class="reveal d2">I worked hard and earned a decent living, but every month the money came in and went right back out. Bills, life, whatever came up first. At the end of it all, I had almost nothing to show for the work.</p>
+                        <p class="reveal d2">I didn't need a bigger paycheck or a stricter budget. What changed everything was one decision: <strong>where my money goes first, the moment I get paid.</strong></p>
+                        <p class="reveal d3">That single change took me from just over broke to over <strong>$100K in liquid assets</strong>. Now I'm building toward a million, and I started I2A to show others exactly how I did it.</p>
+                        <div class="callout reveal d3">It's not about how much you make. It's about what your money does <em>first</em>.</div>
+                    </div>
+                </div>
 
-    <!-- Benefits Section -->
-    <section class="benefits-section" id="benefits">
-        <div class="container">
-            <h2 class="section-title">What You'll Get in the Membership</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎓</div>
-                    <h3>Core Training</h3>
-                    <p>Learn the exact principle and framework that transformed my financial life, step-by-step.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🤝</div>
-                    <h3>Community Support</h3>
-                    <p>Connect with others on the same journey. Share wins, ask questions, and grow together.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📈</div>
-                    <h3>Action Plans</h3>
-                    <p>Get practical, implementation-ready guides to start building wealth immediately.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💬</div>
-                    <h3>Direct Access</h3>
-                    <p>Get answers to your specific situation. I'm here to help you succeed.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔄</div>
-                    <h3>Ongoing Updates</h3>
-                    <p>Continuous training, new content, and strategies as your journey evolves.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🏆</div>
-                    <h3>Accountability</h3>
-                    <p>Join a community of people committed to changing their financial trajectory.</p>
+                <div class="journey reveal" id="journey">
+                    <div class="journey-track"><span></span></div>
+                    <div class="stop">
+                        <div class="stop-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg></div>
+                        <div class="stop-value gold-text">Just Over Broke</div>
+                        <div class="stop-label">Where I Started</div>
+                    </div>
+                    <div class="stop">
+                        <div class="stop-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+                        <div class="stop-value gold-text">$<span data-count="100">100</span>K+</div>
+                        <div class="stop-label">Liquid Assets Today</div>
+                    </div>
+                    <div class="stop goal">
+                        <div class="stop-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4"/><path d="M4 4h13l-2 4 2 4H4"/></svg></div>
+                        <div class="stop-value green-text">$1M</div>
+                        <div class="stop-label">Where I'm Headed</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <div class="faq-container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Is this a get-rich-quick scheme?</span>
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>No. This is about building sustainable, long-term wealth through changing your financial behaviors. It takes time and commitment, but the results are real and lasting.</p>
+        <section class="block principle" id="principle">
+            <div class="container">
+                <div class="principle-card reveal">
+                    <div class="divider">&#9733; &#9733; &#9733;</div>
+                    <h2><span class="gold-text">Where Your Money Goes</span><br><span class="green-text">First</span></h2>
+                    <p>Most people get paid, cover the bills, spend on whatever comes up, and hope something is left over. That order keeps you broke no matter what you earn.</p>
+                    <p>I2A flips the order. Your paycheck goes to work building assets <em>first</em>, and those assets start producing cash flow that works for you.</p>
+                    <span class="script gold-text">Financial Freedom Is A Choice</span>
                 </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>What if I have a low income?</span>
-                    <span>+</span>
+        <section class="block" id="pillars">
+            <div class="container">
+                <div class="section-head">
+                    <div class="eyebrow reveal">The I2A Method</div>
+                    <h2 class="reveal d1"><span class="gold-text">Six Pillars</span> of Perpetual Cash Flow</h2>
+                    <p class="reveal d2">The framework behind my results, taught step by step inside the community.</p>
                 </div>
-                <div class="faq-answer">
-                    <p>This principle works at any income level. It's not about how much you make—it's about where your money goes first. Start where you are, and build from there.</p>
+                <div class="pillars-grid">
+                    <article class="pillar reveal">
+                        <span class="pillar-num">01</span>
+                        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M4 20h16M6 4h12"/></svg></div>
+                        <h3>Invest All Income</h3>
+                        <p>Your paycheck goes to work first, straight into assets, instead of sitting in checking waiting to be spent.</p>
+                    </article>
+                    <article class="pillar reveal d1">
+                        <span class="pillar-num">02</span>
+                        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V14M9 20V10M14 20V12M19 20V6"/><path d="M3 9l6-5 4 3 7-5"/></svg></div>
+                        <h3>Earn Dividends</h3>
+                        <p>Own assets that pay you back, building a stream of income that keeps coming in.</p>
+                    </article>
+                    <article class="pillar reveal d2">
+                        <span class="pillar-num">03</span>
+                        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+                        <h3>Use Margin Smartly</h3>
+                        <p>Learn how margin can be a tool, and the guardrails that keep it from working against you.</p>
+                    </article>
+                    <article class="pillar reveal">
+                        <span class="pillar-num">04</span>
+                        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+                        <h3>Automate Bills</h3>
+                        <p>Put your bills on autopilot so the system runs itself and your money never sits idle.</p>
+                    </article>
+                    <article class="pillar reveal d1">
+                        <span class="pillar-num">05</span>
+                        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                        <h3>Accountability Community</h3>
+                        <p>Real people on the same path, sharing wins, asking questions, and keeping each other on track.</p>
+                    </article>
+                    <article class="pillar reveal d2">
+                        <span class="pillar-num">06</span>
+                        <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.2 8.4C21.4 8.4 23 10.3 23 12s-1.6 3.6-4.8 3.6C14.3 15.6 9.7 8.4 5.8 8.4 2.6 8.4 1 10.3 1 12s1.6 3.6 4.8 3.6c3.9 0 8.5-7.2 12.4-7.2z"/></svg></div>
+                        <h3>Build Wealth, Live Free</h3>
+                        <p>Assets today, options tomorrow, freedom for generations. That's the whole point.</p>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>How long before I see results?</span>
-                    <span>+</span>
+        <section class="block freedom">
+            <div class="container freedom-grid">
+                <div>
+                    <div class="eyebrow reveal">How It Works</div>
+                    <h2 class="reveal d1"><span class="gold-text">Educate.</span> <span class="green-text">Implement.</span> <span class="gold-text">Build Freedom.</span></h2>
+                    <p class="reveal d2">This isn't a course you buy and forget about. It's a lifestyle change, and the I2A community is built to help you actually make it.</p>
+                    <ol class="steps">
+                        <li class="reveal d2"><span class="n">1</span><div><b>Educate</b><span>Learn the principle and the framework behind it, step by step.</span></div></li>
+                        <li class="reveal d3"><span class="n">2</span><div><b>Implement</b><span>Set up your own system with your income, your bills, your goals.</span></div></li>
+                        <li class="reveal d3"><span class="n">3</span><div><b>Build Freedom</b><span>Stay consistent with a community that keeps you accountable.</span></div></li>
+                    </ol>
                 </div>
-                <div class="faq-answer">
-                    <p>You'll notice changes in your mindset and money habits immediately. Real wealth building takes consistent effort over time.</p>
+                <div class="framed reveal">
+                    <img src="assets/freedom-city.webp" alt="Highway sign reading 'Financial Freedom' in front of a city skyline at sunset" width="546" height="240" loading="lazy">
+                    <div class="tag">Assets Today &middot; Options Tomorrow</div>
                 </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>How much does the membership cost?</span>
-                    <span>+</span>
+        <section class="block faq" id="faq">
+            <div class="container">
+                <div class="section-head">
+                    <div class="eyebrow reveal">Questions</div>
+                    <h2 class="reveal d1"><span class="gold-text">Frequently Asked</span></h2>
                 </div>
-                <div class="faq-answer">
-                    <p>Pricing details are available on our membership page. We offer flexible payment options to make it accessible for everyone serious about transforming their finances.</p>
+                <div class="faq-list">
+                    <details class="reveal">
+                        <summary>Is this a get-rich-quick scheme?</summary>
+                        <p>No. I2A is about building wealth by changing how you handle every paycheck. It takes discipline and consistency, and the results build over time.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>What if I don't make much money?</summary>
+                        <p>The principle works at any income level, because it's about where your money goes first, not how much you earn. Start where you are and build from there.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>How soon will I see results?</summary>
+                        <p>Your habits change with the very first paycheck you redirect. Building real assets takes time, and consistency is what makes it compound.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>How much does the membership cost?</summary>
+                        <p>Current membership details are on the <a href="https://www.skool.com/incometoassets" target="_blank" rel="noopener" class="gold-text">I2A Skool page</a>.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>Is this financial advice?</summary>
+                        <p>No. I2A shares education and my own experience. It isn't personalized financial advice. Make decisions based on your own situation, and talk to a licensed professional if you need one.</p>
+                    </details>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Membership CTA Section -->
-    <section class="membership-cta" id="membership">
-        <div class="membership-content">
-            <h2>Ready to Transform Your Financial Life?</h2>
-            <p>Change where your money goes first, and start building real wealth today.</p>
-            <button class="cta-button" style="color: var(--primary);" onclick="joinMembership()">Join the Membership Now</button>        </div>
-    </section>
+        <section class="block join" id="join">
+            <div class="container">
+                <img class="join-logo reveal" src="assets/i2a-logo-sm.webp" alt="" width="180" height="179" loading="lazy">
+                <h2 class="reveal d1"><span class="gold-text">Your Next Paycheck</span><br><span class="green-text">Can Start It</span></h2>
+                <p class="reveal d2">Change where your money goes first, and start turning your income into assets. Join the I2A community on Skool.</p>
+                <a href="https://www.skool.com/incometoassets" target="_blank" rel="noopener" class="btn btn-gold reveal d3">
+                    Join Income to Assets
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+                <div class="fine">You'll be taken to skool.com/incometoassets</div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 My Income to Assets. All rights reserved.</p>
-            <p>Transform your relationship with money. Build lasting wealth.</p>
+            <div class="footer-tag"><span>Assets Today</span><i>&bull;</i><span>Options Tomorrow</span><i>&bull;</i><span>Freedom for Generations</span></div>
+            <p class="disclaimer">Income to Assets provides education and shares personal experience only. It is not financial, investment, tax, or legal advice. Investing involves risk, including loss of principal, and using margin can magnify losses. Individual results vary.</p>
+            <p class="copy">&copy; <span id="year">2026</span> Income to Assets &middot; myincometoassets.com</p>
         </div>
     </footer>
 
     <script>
-        function scrollToStory() {
-            document.getElementById('story').scrollIntoView({ behavior: 'smooth' });
-        }
+        const header = document.querySelector('header');
+        const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
 
-        function scrollToMembership() {
-            document.getElementById('membership').scrollIntoView({ behavior: 'smooth' });
-        }
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-        function joinMembership() {
-            // Placeholder for membership signup flow
-            alert('Membership signup coming soon! Check back for launch details.');
-        }
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const countUp = (el) => {
+            const end = +el.dataset.count;
+            if (reduce) return;
+            const start = performance.now();
+            const tick = (t) => {
+                const p = Math.min((t - start) / 1800, 1);
+                el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+                if (p < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+        };
 
-        function toggleFaq(element) {
-            const faqItem = element.parentElement;
-            faqItem.classList.toggle('active');
-        }
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((e) => {
+                if (!e.isIntersecting) return;
+                e.target.classList.add('in');
+                e.target.querySelectorAll('[data-count]').forEach(countUp);
+                io.unobserve(e.target);
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
     </script>
 </body>
 </html>
