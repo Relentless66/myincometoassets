@@ -212,6 +212,49 @@
             margin-bottom: 34px;
         }
         .hero-lead strong { color: var(--text); font-weight: 600; }
+
+        .video-frame {
+            position: relative;
+            max-width: 560px;
+            margin-bottom: 34px;
+            padding: 5px;
+            border-radius: var(--radius);
+            background: var(--gold-flat);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(212, 175, 55, 0.15);
+        }
+        .video-frame video {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: calc(var(--radius) - 4px);
+            background: #000;
+            object-fit: cover;
+        }
+        .video-play {
+            position: absolute;
+            inset: 5px;
+            border: 0;
+            border-radius: calc(var(--radius) - 4px);
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.45));
+            transition: background 0.3s ease;
+        }
+        .video-play:hover { background: radial-gradient(circle, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35)); }
+        .video-play span {
+            width: 84px; height: 84px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--gold-flat);
+            box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.25), 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.25s ease;
+        }
+        .video-play:hover span { transform: scale(1.08); }
+        .video-play svg { width: 32px; height: 32px; margin-left: 5px; color: #1a1203; }
+        .video-frame.playing .video-play { display: none; }
+
         .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
         .pillars-mini {
             display: flex;
@@ -636,7 +679,7 @@
         @media (max-width: 960px) {
             .hero-grid, .story-grid, .freedom-grid { grid-template-columns: 1fr; }
             .hero { text-align: center; padding-top: 110px; }
-            .hero-lead { margin-left: auto; margin-right: auto; }
+            .hero-lead, .video-frame { margin-left: auto; margin-right: auto; }
             .hero-actions, .pillars-mini { justify-content: center; }
             .logo-stage { order: -1; }
             .logo-stage img { width: min(78vw, 400px); }
@@ -692,6 +735,15 @@
                         <span class="line shimmer">Cash Flow</span>
                     </h1>
                     <p class="hero-lead reveal d2">I went from just over broke, living paycheck to paycheck, to <strong>over $100,000 in liquid assets in less than 18 months</strong>, and I'm well on my way to a million. I didn't do it by earning more. I did it by changing <strong>where my money went first</strong>.</p>
+                    <div class="video-frame reveal d2" id="promo">
+                        <video preload="none" playsinline poster="assets/i2a-commercial-poster.jpg" aria-label="Income to Assets commercial">
+                            <source src="assets/i2a-commercial.mp4" type="video/mp4">
+                            <source src="assets/i2a-commercial.webm" type="video/webm">
+                        </video>
+                        <button class="video-play" type="button" aria-label="Play the Income to Assets video">
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z"/></svg></span>
+                        </button>
+                    </div>
                     <div class="hero-actions reveal d3">
                         <a href="https://www.skool.com/incometoassets/about" target="_blank" rel="noopener" class="btn btn-gold">
                             Join the I2A Community
@@ -922,6 +974,14 @@
             });
         }, { threshold: 0.15 });
         document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+        const promo = document.getElementById('promo');
+        const promoVideo = promo.querySelector('video');
+        promo.querySelector('.video-play').addEventListener('click', () => {
+            promo.classList.add('playing');
+            promoVideo.controls = true;
+            promoVideo.play();
+        });
     </script>
 </body>
 </html>
