@@ -705,6 +705,14 @@
             .pillars-mini { gap: 10px 14px; }
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGEJC8NDEC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FGEJC8NDEC');
+    </script>
 </head>
 <body>
     <header id="top">
@@ -974,6 +982,21 @@
             });
         }, { threshold: 0.15 });
         document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+        // Track clicks through to the Skool about page
+        document.querySelectorAll('a[href^="https://www.skool.com/incometoassets"]').forEach((link) => {
+            link.addEventListener('click', () => {
+                const area = link.closest('header, section, footer');
+                const location = area ? (area.id || area.className.split(' ')[0] || area.tagName.toLowerCase()) : 'page';
+                if (typeof gtag === 'function') {
+                    gtag('event', 'skool_click', {
+                        link_location: location,
+                        link_url: link.href,
+                        transport_type: 'beacon'
+                    });
+                }
+            });
+        });
 
         const promo = document.getElementById('promo');
         const promoVideo = promo.querySelector('video');
