@@ -662,6 +662,27 @@
             color: #7d8a7a;
         }
         .copy { font-size: 0.82rem; color: var(--muted); }
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px 14px;
+            margin-bottom: 14px;
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+        .legal-links a, .legal-links button {
+            font: inherit;
+            color: var(--gold-soft);
+            background: none;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .legal-links a:hover, .legal-links button:hover { color: var(--gold); }
 
         /* Reveal */
         .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s ease, transform 0.9s ease; }
@@ -705,6 +726,7 @@
             .pillars-mini { gap: 10px 14px; }
         }
     </style>
+    <script src="/assets/consent.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGEJC8NDEC"></script>
     <script>
@@ -948,6 +970,7 @@
         <div class="container">
             <div class="footer-tag"><span>Assets Today</span><i>&bull;</i><span>Options Tomorrow</span><i>&bull;</i><span>Freedom for Generations</span></div>
             <p class="disclaimer">Income to Assets provides education and shares personal experience only. It is not financial, investment, tax, or legal advice. Investing involves risk, including loss of principal, and using margin can magnify losses. Individual results vary.</p>
+            <p class="legal-links"><a href="/privacy.html">Privacy Policy</a><span aria-hidden="true">&bull;</span><button type="button" id="cookie-settings">Cookie settings</button></p>
             <p class="copy">&copy; <span id="year">2026</span> Income to Assets &middot; myincometoassets.com</p>
         </div>
     </footer>
